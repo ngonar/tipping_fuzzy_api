@@ -44,4 +44,4 @@ async def calculate_tip(amount:float, food:float, service:float):
 
     tip_percentage = tipping.output['tip']/100
 
-    return {"tip": amount*tip_percentage}
+    return {"tip": round(amount*tip_percentage,2)}
